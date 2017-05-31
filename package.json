@@ -1,0 +1,44 @@
+{
+  "name": "amazon-link",
+  "description": "Command line interface for quickly converting amazon mobile links to desktop links.",
+  "author": {
+    "name": "Pascal Iske",
+    "email": "info@pascal-iske.de",
+    "url": "https://pascal-iske.de"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/pascaliske/amazon-link.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/pascaliske/amazon-link/issues"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "amazon-link": "dist/cli.js"
+  },
+  "scripts": {
+    "prepublish": "yarn run build",
+    "build": "rm -rf dist/ && babel --out-dir dist/ src/",
+    "watch": "nodemon --exec \"yarn run build\" --watch ./src/lib/",
+    "test": "ava tests/*.js"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.23.0",
+    "clipboardy": "^1.1.2",
+    "modern-cli": "^2.0.5"
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-function-bind": "^6.22.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "nodemon": "^1.11.0"
+  }
+}
