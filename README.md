@@ -5,7 +5,7 @@
 [![Travis](https://img.shields.io/travis/pascaliske/amazon-link.svg?style=flat)]()
 [![Greenkeeper badge](https://badges.greenkeeper.io/pascaliske/amazon-link.svg)](https://greenkeeper.io/)
 
-> Command line interface for quickly converting amazon mobile links to desktop links.
+> Command line utility for quickly converting amazons mobile links to their desktop equivalents.
 
 ## Install
 ```bash
