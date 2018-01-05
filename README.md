@@ -1,8 +1,8 @@
-# `pascaliske/amazon-link`
+# `amazon-link`
 
-[![npm](https://img.shields.io/npm/v/amazon-link.svg?style=flat)]()
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://raw.githubusercontent.com/pascaliske/modern-cli/master/LICENSE.md)
-[![Travis](https://img.shields.io/travis/pascaliske/amazon-link.svg?style=flat)]()
+[![npm](https://img.shields.io/npm/v/amazon-link.svg?style=flat)](https://www.npmjs.com/package/amazon-link)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/pascaliske/amazon-link/blob/master/LICENSE.md)
+[![Travis](https://img.shields.io/travis/pascaliske/amazon-link.svg?style=flat)](https://travis-ci.org/pascaliske/amazon-link)
 [![Greenkeeper badge](https://badges.greenkeeper.io/pascaliske/amazon-link.svg)](https://greenkeeper.io/)
 
 > Command line utility for quickly converting amazons mobile links to their desktop equivalents.
