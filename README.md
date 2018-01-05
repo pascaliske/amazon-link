@@ -8,11 +8,13 @@
 > Command line utility for quickly converting amazons mobile links to their desktop equivalents.
 
 ## Install
+
 ```bash
 $ yarn global add amazon-link
 ```
 
 ## CLI
+
 Use the globally installed cli to convert amazon links:
 
 ```bash
@@ -20,4 +22,5 @@ $ amazon-link convert <mobile-link>
 ```
 
 ## License
+
 MIT © [Pascal Iske](https://pascal-iske.de)
