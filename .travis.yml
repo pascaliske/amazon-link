@@ -1,10 +1,20 @@
 language: node_js
 node_js:
-  - '8'
-  - '7'
-  - '6'
-  - '5'
+- '9'
+- '8'
+- '7'
 install:
-  - yarn install
+- yarn install
+- yarn run build
 script:
-  - yarn run test
+- yarn run test
+deploy:
+  provider: npm
+  email: info@pascal-iske.de
+  api_key:
+    secure: WeSQqrzBZGi/Ehf5yzYajlc/jRcwIWO2cX5kOE9hABM4uVRxj9oUS9EAJtu95n2HkDwzRNdpZXzvMnIqSbM5K7ki1YdGM1S0GNQo4lXV9CArI+vkWcvS6uxr848tO4nHnU9ijilqEHLHR2CpB6YGsZHPbzA566SyDnqKxTQrTrxtI/rnVbTD3+2EV1lFNWfUEWrEoeR/xTGrvZJb4StOkToKMfnuaJA5lFarqyrWBLv6ss1jyDRoQuxX1M9YBkQ28BugRvfhX/8l+Xp/X5kMnkzB6QMylF+ojflDzzejsvlV7fq1q+EDfuZ1y0U7sAlWBBMmwfKVerPezTdcArrQNKHFy88eRjjQnzLf+XV9g3qj6+2fJKC1IF09YalVhw5rOhlNF9RFU94CLgqOO2bsUJmF+auRT3lDrfnN5YtmEFPaOF7Scov2yUlvNNEcsha4j88CXh+0jhINZbfl4i80ckwog9GNU8006Ro08rdwz7NiuXIsE343Kqy1DE00U0hm1C+k42c5Hii5rzvqXWyj4yaBu6oKYeCWWOfDUG5VE7iuvCSfXlekpNKcSrGnDPIeAxYoTHy2RHFSvDqaJO7VuZ6uHVn//9AzhqcUhu2PxDtMyX0p9I8sY7eksZUL/TwU8WGn+1tjcYyvLtuErhRZz/rVubo42ldl90etlBwcQq0=
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
+    node: 9
