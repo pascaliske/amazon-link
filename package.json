@@ -38,7 +38,7 @@
   "devDependencies": {
     "@types/node": "^10.12.8",
     "ava": "^1.0.1",
-    "typedoc": "^0.14.0",
+    "typedoc": "^0.14.2",
     "typescript": "^3.0.1"
   }
 }
